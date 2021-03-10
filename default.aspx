@@ -38,26 +38,26 @@
 
  </li>
  <li>
-     <asp:Label ID="lblPassword" runat="server" Text="Password:"></asp:Label>
-         <asp:TextBox ID="txtPassword" runat="server"></asp:TextBox>
-     <asp:RequiredFieldValidator ID="RequiredFieldValidator2" runat="server"
-        ErrorMessage="*" ControlToValidate="txtPassword" Display="Dynamic"
-        ValidationGroup="group1" CssClass="required" SetFocusOnError="True">
+    <asp:Label ID="lblPassword" runat="server" Text="Password:"></asp:Label>
+        <asp:TextBox ID="txtPassword" runat="server" TextMode="Password"></asp:TextBox>
+    <asp:RequiredFieldValidator ID="RequiredFieldValidator2" runat="server"
+       ErrorMessage="*" ControlToValidate="txtPassword" Display="Dynamic"
+       ValidationGroup="group1" CssClass="required" SetFocusOnError="True">
 </asp:RequiredFieldValidator>
-  
+    
 
- </li>
-             <li>
-     <asp:Label ID="lblVerifyPassword" runat="server" Text="Verify Password:"></asp:Label>
-         <asp:TextBox ID="txtVerifyPassword" runat="server"></asp:TextBox>
-     <asp:RequiredFieldValidator ID="RequiredFieldValidator3" runat="server"
-        ErrorMessage="*" ControlToValidate="txtVerifyPassword" Display="Dynamic"
-        ValidationGroup="group1" CssClass="required" SetFocusOnError="True">
-     </asp:RequiredFieldValidator>
+</li>
+            <li>
+    <asp:Label ID="lblVerifyPassword" runat="server" Text="Verify Password:"></asp:Label>
+        <asp:TextBox ID="txtVerifyPassword" runat="server" TextMode="Password"></asp:TextBox>
+    <asp:RequiredFieldValidator ID="RequiredFieldValidator3" runat="server"
+       ErrorMessage="*" ControlToValidate="txtVerifyPassword" Display="Dynamic"
+       ValidationGroup="group1" CssClass="required" SetFocusOnError="True">
+    </asp:RequiredFieldValidator>
 
-     <asp:CompareValidator ID="compvPassword" runat="server" ErrorMessage="Password didn't match" ControlToCompare="txtPassword" ControlToValidate="txtVerifyPassword" CssClass=".required" Display="Dynamic" SetFocusOnError="True" ValidationGroup="group1"></asp:CompareValidator>
+    <asp:CompareValidator ID="compvPassword" runat="server" ErrorMessage="Password didn't match" ControlToCompare="txtPassword" ControlToValidate="txtVerifyPassword" CssClass=".required" Display="Dynamic" SetFocusOnError="True" ValidationGroup="group1"></asp:CompareValidator>
 
- </li>
+</li>
              <li>
      <asp:Label ID="lblAge" runat="server" Text="Age:"></asp:Label>
          <asp:TextBox ID="txtAge" runat="server"></asp:TextBox>
