@@ -11,7 +11,8 @@
  input,span{display:inline-block;width:200px;}
  .spacer{display:inline-block;widows:100px;}
  .required{display:inline-block;color:red;font-size:10px;}
- </style>
+ </style>
+
 </head>
 
 <body>
@@ -43,11 +44,7 @@
         ErrorMessage="*" ControlToValidate="txtPassword" Display="Dynamic"
         ValidationGroup="group1" CssClass="required" SetFocusOnError="True">
 </asp:RequiredFieldValidator>
-     <%--<asp:CustomValidator ID="CustomValidator2" runat="server"
-        ControlToValidate="txtUserName" Display="Dynamic"
-        OnServerValidate="vldUsername_ServerValidate"
-        ValidationGroup="group1">
-</asp:CustomValidator>--%>
+  
 
  </li>
              <li>
@@ -68,7 +65,7 @@
         ErrorMessage="*" ControlToValidate="txtAge" Display="Dynamic"
         ValidationGroup="group1" CssClass="required" SetFocusOnError="True">
 </asp:RequiredFieldValidator>
-                 <asp:CompareValidator ID="compAge" runat="server" ControlToValidate="txtAge" CssClass=".required" Display="Dynamic" ErrorMessage="Only Integer Value is allowed" Operator="DataTypeCheck" SetFocusOnError="True" Type="Integer" ValidationGroup="group1" Visible="False"></asp:CompareValidator>
+                 <asp:CompareValidator ID="compAge" runat="server" ControlToValidate="txtAge" CssClass=".required" Display="Dynamic" ErrorMessage="Only Integer Value is allowed" Operator="DataTypeCheck" SetFocusOnError="True" Type="Integer" ValidationGroup="group1"></asp:CompareValidator>
    
 
  </li>
